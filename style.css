@@ -1,0 +1,732 @@
+/*     ------     variables dry -------          */
+
+
+:root {
+    --color-lavanda: #CDAFFE;
+    --color-azul: #2971F7;
+    --color-naranja: #F65800;
+    --color-lima: #C6E700;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #F5F5F3;
+
+    --font-titulo: 'Domine', Georgia, serif;
+    --font-cuerpo: 'DM Sans', sans-serif;
+
+    --espaciado-seccion: 100px;
+    --transicion: 0.25s ease;
+}
+
+
+/*     -------    reset margenes y rellenos    -------          */
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-cuerpo);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-negro);
+    background: var(--color-blanco);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-titulo);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/* ----------              NAVVVVVVBAAAAAAAR           ---------- */
+
+
+
+#navbar {
+    background: var(--color-lavanda);
+    border-bottom: 1.5px solid var(--color-negro);
+    padding: 16px 24px;
+    transition: var(--transicion);
+}
+
+#navbar .navbar-brand {
+    /* mora */
+    font-family: var(--font-titulo);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-negro);
+    letter-spacing: -0.5px;
+}
+
+#navbar .nav-link {
+    /* inicio  sobre mi  proyectos contacto */
+    font-family: var(--font-cuerpo);
+    font-size: 0.9rem;
+    color: var(--color-negro);
+    font-weight: 500;
+    padding: 4px 16px !important;
+    transition: var(--transicion);
+    border-radius: 20px;
+}
+
+#navbar .nav-link:hover {
+    /* hover links */
+    background: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+
+
+
+/* ----------              HEEEEEROOOOOOOO           ---------- */
+
+
+
+.hero-section {
+    min-height: 100vh;
+    background: var(--color-gris-claro);
+    padding-top: 80px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1.5px solid var(--color-negro);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-eyebrow {
+    font-family: var(--font-cuerpo);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-naranja);
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-family: var(--font-titulo);
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: var(--color-negro);
+    margin-bottom: 24px;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 480px;
+    margin-bottom: 40px;
+}
+
+.btn-mora {
+    /* boton principal */
+    display: inline-block;
+    font-family: var(--font-cuerpo);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 40px;
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    border: 2px solid var(--color-negro);
+    cursor: pointer;
+    transition: var(--transicion);
+    letter-spacing: 0.5px;
+}
+
+.btn-mora:hover {
+    background: var(--color-blanco);
+    color: var(--color-negro);
+    text-decoration: none;
+}
+
+.btn-mora--sm {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+}
+
+.btn-mora--outline {
+    background: transparent;
+    color: var(--color-negro);
+}
+
+.btn-mora--outline:hover {
+    background: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+.hero-img-wrap {
+    /* imagen hero */
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    max-height: 520px;
+    background-image: url(images/mora.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1.5px solid var(--color-negro);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-cuerpo);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+
+
+/* ----------              SEEECCCCIOOOONNNNESSSS           ---------- */
+
+
+.seccion {
+    padding: var(--espaciado-seccion) 0;
+}
+
+.seccion--blanca {
+    background: var(--color-blanco);
+    border-bottom: 1.5px solid var(--color-negro);
+}
+
+.seccion--gris {
+    background: var(--color-gris-claro);
+    border-bottom: 1.5px solid var(--color-negro);
+}
+
+.seccion--negra {
+    background: var(--color-negro);
+}
+
+.seccion-eyebrow {
+    font-family: var(--font-cuerpo);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-azul);
+    margin-bottom: 8px;
+}
+
+.seccion-eyebrow--claro {
+    color: var(--color-lima);
+}
+
+.seccion-titulo {
+    font-family: var(--font-titulo);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    color: var(--color-negro);
+    margin-bottom: 20px;
+}
+
+.seccion-titulo--claro {
+    color: var(--color-blanco);
+}
+
+.seccion-texto {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+
+/* ----------              SOOOOOBBRE MIII           ---------- */
+
+
+.sobre-mi-img {
+    position: relative;
+}
+
+.sobre-mi-img img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    max-height: 520px;
+    border: 1.5px solid var(--color-negro);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: #888;
+    position: relative;
+    z-index: 1;
+}
+
+/*.sobre-mi-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  max-height: 520px;
+  background-image: url(images/sobre-mi.jpg);
+  background-size: cover;       
+  background-position: center;   
+  background-repeat: no-repeat;
+  border: 1.5px solid var(--color-negro);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #888;
+  position: relative;
+  z-index: 1;
+} */
+
+/* ----------              BAAADGESSS BOOSTRAPP           ---------- */
+
+
+skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badge-mora {
+    display: inline-block;
+    font-family: var(--font-cuerpo);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1.5px solid var(--color-negro);
+    letter-spacing: 0.3px;
+}
+
+.badge-mora--sm {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+}
+
+/* variantes de color */
+.badge-mora--lavanda {
+    background: var(--color-lavanda);
+    color: #26215C;
+}
+
+.badge-mora--azul {
+    background: var(--color-azul);
+    color: var(--color-blanco);
+}
+
+.badge-mora--naranja {
+    background: var(--color-naranja);
+    color: var(--color-blanco);
+}
+
+.badge-mora--lima {
+    background: var(--color-lima);
+    color: #2C3A00;
+}
+
+.badge-mora--negro {
+    background: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+
+
+/* ----------              CARDDDSSSS BOOSTRAPP           ---------- */
+
+
+.card-mora {
+    border: 1.5px solid var(--color-negro);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--transicion), box-shadow var(--transicion);
+    height: 100%;
+    background: var(--color-blanco);
+}
+
+.card-mora:hover {
+    transform: translateY(-6px);
+    box-shadow: 6px 6px 0px var(--color-negro);
+}
+
+/* Placeholder de imagen de card */
+.card-img-placeholder {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-titulo);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1.5px solid var(--color-negro);
+    line-height: 1.3;
+}
+
+/* portadas de card */
+.card-img--lima {
+    background-image: url(images/arnold/3.\ LARRIGAUDIERE\ -\ ARNOLD.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    ;
+}
+
+.card-img--azul {
+    background-image: url(images/isometria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img--lavanda {
+    background-image: url(images/app-tuki.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img--naranja {
+    background-image: url(images/cocinita.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img--negro {
+    background-image: url(images/brand-luzu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-title-mora {
+    font-family: var(--font-titulo);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-negro);
+    margin-bottom: 8px;
+}
+
+.card-text-mora {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.card-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+
+/* ----------              MODDDDALSSSS BOOSTRAPP           ---------- */
+
+
+.modal-mora .modal-header {
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    border-bottom: none;
+}
+
+.modal-mora .modal-title {
+    font-family: var(--font-titulo);
+    font-size: 1.1rem;
+}
+
+.modal-mora .close {
+    color: var(--color-blanco);
+    opacity: 1;
+}
+
+.modal-mora .modal-footer {
+    border-top: 1.5px solid var(--color-gris-medio);
+}
+
+.modal-subtitulo {
+    font-family: var(--font-cuerpo);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-azul);
+    margin-bottom: 6px;
+}
+
+/* ----------              CARRUSELLLL BOOSTRAPP           ---------- */
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-placeholder {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.carousel-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+} 
+
+.carousel-placeholder--lima    { background: var(--color-blanco);    color: #2C3A00; }
+.carousel-placeholder--azul    { background: var(--color-blanco);    color: var(--color-blanco); }
+.carousel-placeholder--lavanda { background: var(--color-blanco); color: #26215C; }
+.carousel-placeholder--naranja { background: var(--color-blanco); color: var(--color-blanco); }
+.carousel-placeholder--negro   { background: var(--color-blanco);   color: var(--color-blanco); }
+
+
+/* -------   PARA EL VIDEO YOUTUBE  ------ */
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border: 1.5px solid var(--color-negro);
+  border-radius: 8px;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* ----------              CONTACCCTOOOO           ---------- */
+
+
+
+.label-mora {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--color-gris-medio);
+    margin-bottom: 6px;
+}
+
+.input-mora {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    font-family: var(--font-cuerpo);
+    font-size: 0.95rem;
+    color: var(--color-blanco);
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radio);
+    transition: border-color var(--transicion);
+    margin-bottom: 0;
+}
+
+.input-mora::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.input-mora:focus {
+    outline: none;
+    border-color: var(--color-lima);
+}
+
+textarea.input-mora {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.alert-mora {
+    background: var(--color-lima);
+    color: #2C3A00;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: var(--radio);
+    border: 1.5px solid var(--color-negro);
+}
+
+/* Redes sociales */
+.redes-titulo {
+    font-family: var(--font-titulo);
+    font-size: 1.2rem;
+    color: var(--color-blanco);
+    margin-bottom: 20px;
+}
+
+.red-social-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-blanco);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    transition: var(--transicion);
+}
+
+.red-social-link:hover {
+    color: var(--color-lima);
+    text-decoration: none;
+}
+
+.red-social-icono {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    transition: var(--transicion);
+}
+
+.red-social-link:hover .red-social-icono {
+    background: var(--color-lima);
+    color: #2C3A00;
+    border-color: var(--color-lima);
+}
+
+.contacto-email {
+    margin-top: 28px;
+}
+
+.contacto-email-text {
+    font-family: var(--font-titulo);
+    font-size: 1.1rem;
+    color: var(--color-blanco);
+}
+
+
+/*              FOOTER                 */
+.footer-mora {
+    background: var(--color-blanco);
+    border-top: 1.5px solid var(--color-negro);
+    padding: 20px 0;
+    font-size: 0.82rem;
+    font-family: var(--font-cuerpo);
+    color: #555;
+}
+
+/*.           AJUUUUSTES RESPONSIVEEE        */
+@media (max-width: 767px) {
+    :root {
+        --espaciado-seccion: 60px;
+    }
+
+    .hero-title {
+        font-size: 2.6rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-img-wrap {
+        margin-top: 32px;
+    }
+
+    .hero-img-placeholder {
+        aspect-ratio: 4/3;
+    }
+
+    .hero-accent--lima {
+        width: 200px;
+        height: 200px;
+        bottom: -40px;
+        right: -20px;
+    }
+
+    .seccion-titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-mi-img {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .card-img-placeholder {
+        height: 140px;
+    }
+
+    .carousel-placeholder {
+        height: 200px;
+    }
+
+    .video-wrap {
+        padding-bottom: 60%;
+    }
+
+    .modal-dialog {
+        margin: 8px;
+    }
+
+    .footer-mora .container {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .skills-wrap {
+        gap: 6px;
+    }
+
+    .badge-mora {
+        font-size: 0.72rem;
+        padding: 4px 10px;
+    }
+}

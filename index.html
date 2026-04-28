@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mora Larrigaudiere — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- tipografias de google -->
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="style.css"> <!-- css -->
+
+</head>
+
+<body>
+
+
+  <!-- bootstrap 1                NAVBARRRRRRR                  -->
+
+
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+
+    <a class="navbar-brand" href="#inicio">mora</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-------------                   HEROOOOOOOO                 ------------->
+
+
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-7">
+          <p class="hero-eyebrow">diseñadora multimedial | audiovisual, motion & ux/ui</p>
+          <h1 class="hero-title">mora<br>Larrigaudiere<br>Curutchet</h1>
+          <p class="hero-sub">Estudiante de Diseño Multimedial en ISEC. Me apasiona crear experiencias visuales que
+            comuniquen, conecten y sorprendan.</p>
+          <a href="#proyectos" class="btn-mora">ver proyectos ↓</a>
+        </div>
+
+        <div class="col-12 col-md-5">
+          <div class="hero-img-placeholder">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------                   SOBRE MIIII                 ------------->
+
+
+  <section id="sobre-mi" class="seccion">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-5">
+          <div class="sobre-mi-img">
+            <img src="images/sobre-mi.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-7">
+          <p class="seccion-eyebrow">Sobre mí</p>
+          <h2 class="seccion-titulo">Creativa,<br>curiosa y detallista.</h2>
+          <p class="seccion-texto">Soy Mora Larrigaudiere Curutchet, estudiante de Diseño Gráfico en ISEC. Me
+            especializo en diseño digital, UX/UI y desarrollo web.</p>
+          <p class="seccion-texto">A lo largo de mi carrera trabajé con Figma, Illustrator, Photoshop, Blender,
+            Premiere, AfterEffects, combinando creatividad con pensamiento estratégico.</p>
+          <!-- bootstrap 2 badges -->
+          <div class="skills-wrap">
+            <span class="badge-mora badge-mora--lavanda">Figma</span> <!-- principio dry para los colores -->
+            <span class="badge-mora badge-mora--azul">Illustrator</span>
+            <span class="badge-mora badge-mora--naranja">Photoshop</span>
+            <span class="badge-mora badge-mora--lima">Blender</span>
+            <span class="badge-mora badge-mora--negro">HTML / CSS</span>
+            <span class="badge-mora badge-mora--lavanda">AfterEffects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------                   PROYECCCTOOOOSSSSSS                 ------------->
+
+
+  <section id="proyectos" class="seccion seccion--gris">
+    <div class="container">
+
+      <p class="seccion-eyebrow text-center">Mi trabajo</p>
+      <h2 class="seccion-titulo text-center">Proyectos</h2>
+
+      <div class="row">
+
+        <!-- proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <!-- cel (col-12): 1 card p/fila, ancho completo. tablet (col-md-6): 2 cards p/fila. desktop (col-lg-4): 3 cards p/fila -->
+          <div class="card card-mora">
+
+            <div class="card-img-placeholder card-img--lima">
+
+            </div>
+            <!-- bootstrap 3 card -->
+            <div class="card-body">
+              <span class="badge-mora badge-mora--lima badge-mora--sm">Animación 2D y 3D</span>
+              <h5 class="card-title-mora">Habitación Hey Arnold!</h5>
+              <p class="card-text-mora">Animación 3D modelada desde cero. Incluye texturas, iluminación y motion paths.
+              </p>
+              <div class="card-tools">
+                <span class="badge-mora badge-mora--negro badge-mora--sm">Blender</span>
+              </div>
+              <button class="btn-mora btn-mora--sm" data-toggle="modal" data-target="#modal1">
+                Ver detalles
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <!-- cel (col-12): 1 card p/fila, ancho completo. tablet (col-md-6): 2 cards p/fila. desktop (col-lg-4): 3 cards p/fila -->
+          <div class="card card-mora">
+
+            <div class="card-img-placeholder card-img--azul">
+
+            </div>
+            <!-- bootstrap 3 card -->
+            <div class="card-body">
+              <span class="badge-mora badge-mora--lima badge-mora--sm">Herramientas de Diseño Digital</span>
+              <h5 class="card-title-mora">Ilustración Isométrica</h5>
+              <p class="card-text-mora">Ilustración vectorial isométrica trabajada en Adobe Illustrator. Composición,
+                perspectiva y uso avanzado de herramientas editoriales.</p>
+              <div class="card-tools">
+                <span class="badge-mora badge-mora--negro badge-mora--sm">Illustrator</span>
+              </div>
+              <button class="btn-mora btn-mora--sm" data-toggle="modal" data-target="#modal2">
+                Ver detalles
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <!-- proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <!-- cel (col-12): 1 card p/fila, ancho completo. tablet (col-md-6): 2 cards p/fila. desktop (col-lg-4): 3 cards p/fila -->
+          <div class="card card-mora">
+
+            <div class="card-img-placeholder card-img--lavanda">
+
+            </div>
+            <!-- bootstrap 3 card -->
+            <div class="card-body">
+              <span class="badge-mora badge-mora--lima badge-mora--sm">Diseño UX/UI</span>
+              <h5 class="card-title-mora">App "Tuki"</h5>
+              <p class="card-text-mora">Diseño de aplicación mobile centrado en el usuario. Research, arquitectura de
+                información, wireframes y prototipo interactivo.</p>
+              <div class="card-tools">
+                <span class="badge-mora badge-mora--negro badge-mora--sm">Figma</span>
+              </div>
+              <button class="btn-mora btn-mora--sm" data-toggle="modal" data-target="#modal3">
+                Ver detalles
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <!-- proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <!-- cel (col-12): 1 card p/fila, ancho completo. tablet (col-md-6): 2 cards p/fila. desktop (col-lg-4): 3 cards p/fila -->
+          <div class="card card-mora">
+
+            <div class="card-img-placeholder card-img--naranja">
+
+            </div>
+            <!-- bootstrap 3 card -->
+            <div class="card-body">
+              <span class="badge-mora badge-mora--lima badge-mora--sm">Diseño Web y Mobile</span>
+              <h5 class="card-title-mora">The Cocinita Miami</h5>
+              <p class="card-text-mora">Diseño web y mobile para restaurante. Sistema interactivo con metodologías de
+                diseño centradas en la experiencia del usuario.</p>
+              <div class="card-tools">
+                <span class="badge-mora badge-mora--negro badge-mora--sm">Figma</span>
+              </div>
+              <button class="btn-mora btn-mora--sm" data-toggle="modal" data-target="#modal4">
+                Ver detalles
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <!-- proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <!-- cel (col-12): 1 card p/fila, ancho completo. tablet (col-md-6): 2 cards p/fila. desktop (col-lg-4): 3 cards p/fila -->
+          <div class="card card-mora">
+
+            <div class="card-img-placeholder card-img--negro">
+
+            </div>
+            <!-- bootstrap 3 card -->
+            <div class="card-body">
+              <span class="badge-mora badge-mora--lima badge-mora--sm">Práctica Prof. en Diseño Gráfico</span>
+              <h5 class="card-title-mora">Re-branding LUZU</h5>
+              <p class="card-text-mora">Desarrollo de identidad institucional para el stream LUZU. Branding completo:
+                research, logotipo, paleta, tipografía y aplicaciones.</p>
+              <div class="card-tools">
+                <span class="badge-mora badge-mora--lavanda badge-mora--sm">Illustrator</span>
+                <span class="badge-mora badge-mora--azul badge-mora--sm">Photoshop</span>
+              </div>
+              <button class="btn-mora btn-mora--sm" data-toggle="modal" data-target="#modal5">
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-------------                   MOOODALLLLLS                 ------------->
+
+
+  <!-- -------------------------  bootstrap 4 modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content modal-mora">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Habitación Hey Arnold! | Animación 3D</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!-- bootstrap 5 carrousel (dentro de modal) -->
+          <div id="carousel1" class="carousel slide mb-4" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-placeholder carousel-placeholder--lima">
+                <img src="images/arnold/1. LARRIGAUDIERE - ARNOLD.png" alt="Vista 1">
+              </div>
+              <div class="carousel-item carousel-placeholder carousel-placeholder--lima">
+                <img src="images/arnold/2. LARRIGAUDIERE - ARNOLD.png" alt="Vista 2">
+              </div>
+              <div class="carousel-item carousel-placeholder carousel-placeholder--lima">
+                <img src="images/arnold/3. LARRIGAUDIERE - ARNOLD.png" alt="Vista 3">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <h6 class="modal-subtitulo">Descripción técnica</h6>
+              <p>Recreación 3D de la habitación de Hey Arnold! en Blender. El proyecto abarcó modelado de objetos, UV
+                mapping, materiales, texturas, iluminación y animación con motion paths.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h6 class="modal-subtitulo">Herramientas</h6>
+              <span class="badge-mora badge-mora--lima">Blender</span>
+              <h6 class="modal-subtitulo mt-3">Materia</h6>
+              <p>Animación 2D y 3D</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-mora btn-mora--sm" data-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------  bootstrap 4 modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content modal-mora">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Ilustración Isométrica | Illustrator</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!-- bootstrap 5 carrousel (dentro de modal) -->
+          <div id="carousel2" class="carousel slide mb-4" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-placeholder carousel-placeholder--azul">
+                <img src="images/isometria.jpg" alt="Ilustración isométrica">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <h6 class="modal-subtitulo">Descripción técnica</h6>
+              <p>Ilustración vectorial con perspectiva isométrica. Trabajo de armado editorial con dominio de capas,
+                grillas isométricas y paleta de color cohesiva en Adobe Illustrator.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h6 class="modal-subtitulo">Herramientas</h6>
+              <span class="badge-mora badge-mora--azul">Illustrator</span>
+              <h6 class="modal-subtitulo mt-3">Materia</h6>
+              <p>Herramientas de Diseño Digital</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-mora btn-mora--sm" data-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -------------------------  bootstrap 4 modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content modal-mora">
+
+        <div class="modal-header">
+          <h5 class="modal-title">App "Tuki" | Diseño UX/UI</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!-- bootstrap 5 carrousel (dentro de modal) -->
+          <div id="carousel3" class="carousel slide mb-4" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-placeholder carousel-placeholder--lavanda">
+                <img src="images/tuki/Páginas Camino Seguro.png" alt="Camino Seguro">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <h6 class="modal-subtitulo">Descripción técnica</h6>
+              <p>Diseño de aplicación mobile bajo metodología DCU (Diseño Centrado en el Usuario). Incluye research,
+                definición de personas, arquitectura de información, wireframes de baja y alta fidelidad, y prototipo
+                navegable.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h6 class="modal-subtitulo">Herramientas</h6>
+              <span class="badge-mora badge-mora--lavanda">Figma</span>
+              <h6 class="modal-subtitulo mt-3">Materia</h6>
+              <p>Diseño UX/UI</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-mora btn-mora--sm" data-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -------------------------  bootstrap 4 modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content modal-mora">
+
+        <div class="modal-header">
+          <h5 class="modal-title">The Cocinita Miami | Diseño Web y Mobile</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!-- bootstrap 5 carrousel (dentro de modal) -->
+          <div id="carousel4" class="carousel slide mb-4" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-placeholder carousel-placeholder--naranja">
+                <img src="images/cocinita/FULL Desktop.png" alt="Full Desktop">
+              </div>
+              <div class="carousel-item carousel-placeholder carousel-placeholder--naranja">
+                <img src="images/cocinita/WF Desktop.png" alt="Wireframes Desktop">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <h6 class="modal-subtitulo">Descripción técnica</h6>
+              <p>Diseño de sistema web y mobile para restaurante. Se aplicaron metodologías de diseño de sistemas
+                interactivos, con foco en responsive design, jerarquía visual y experiencia de usuario en contexto
+                gastronómico.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h6 class="modal-subtitulo">Herramientas</h6>
+              <span class="badge-mora badge-mora--naranja">Figma</span>
+              <h6 class="modal-subtitulo mt-3">Materia</h6>
+              <p>Diseño Web y Mobile</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-mora btn-mora--sm" data-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -------------------------  bootstrap 4 modal 5 -->
+  <div class="modal fade" id="modal5" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content modal-mora">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Re-branding LUZU | Identidad Institucional</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!-- bootstrap 5 carrousel (dentro de modal) -->
+
+
+          <div id="carousel5" class="carousel slide mb-4" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-placeholder carousel-placeholder--negro">
+                <img src="images/luzu/luzu-1.png" alt="Logotipo">
+              </div>
+
+              <div class="carousel-item carousel-placeholder carousel-placeholder--negro">
+                <img src="images/luzu/luzu-2.png" alt="Colores">
+              </div>
+
+              <div class="carousel-item carousel-placeholder carousel-placeholder--negro">
+                <img src="images/luzu/luzu-3.png" alt="Aplicaciones">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <h6 class="modal-subtitulo">Descripción técnica</h6>
+              <p>Rediseño de identidad institucional para el stream LUZU. Comprende el desarrollo de logotipo, manual de
+                marca, definición de paleta cromática, sistema tipográfico y mockups de aplicación en diferentes
+                soportes.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h6 class="modal-subtitulo">Herramientas</h6>
+              <span class="badge-mora badge-mora--naranja">Illustrator</span>
+              <span class="badge-mora badge-mora--azul">Photoshop</span>
+              <h6 class="modal-subtitulo mt-3">Materia</h6>
+              <p>Práctica Profesionalizante en Diseño Gráfico</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-mora btn-mora--sm" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------   VIDEO YOUTUBE  -------------->
+  <section class="seccion seccion--blanca">
+    <div class="container text-center">
+      <p class="seccion-eyebrow">👩🏻‍💻</p>
+      <h2 class="seccion-titulo mb-4">para el mood creativo</h2>
+      <div class="video-wrap">
+        <iframe width="560" height="315"
+          src="https://www.youtube-nocookie.com/embed/CvdQs6-zsv0?si=9WDtF3kpz27RJDJy&amp;controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-------------                   CONTAAAACTOOOOOOO                 ------------->
+
+
+  <section id="contacto" class="seccion seccion--negra">
+    <div class="container">
+
+      <p class="seccion-eyebrow seccion-eyebrow--claro text-center">Hablemos</p>
+      <h2 class="seccion-titulo seccion-titulo--claro text-center">¿Trabajamos juntos?</h2>
+
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <label class="label-mora" for="nombre">Nombre</label>
+            <input type="text" class="input-mora" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label class="label-mora" for="email">Email</label>
+            <input type="email" class="input-mora" id="email" placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label class="label-mora" for="mensaje">Mensaje</label>
+            <textarea class="input-mora" id="mensaje" rows="4" placeholder="¿En qué puedo ayudarte?"></textarea>
+          </div>
+          <button type="button" class="btn-mora" id="btn-enviar">Enviar mensaje →</button>
+          <div id="mensaje-enviado" style="display:none;" class="alert-mora mt-3">
+            ¡Mensaje enviado!
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 offset-md-1">
+          <h5 class="redes-titulo">Encontrame en</h5>
+          <a href="https://ar.linkedin.com/in/mora-larrigaudiere-curutchet" target="_blank" class="red-social-link">
+            <span class="red-social-icono">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/mora-larrigaudiere-c" target="_blank" class="red-social-link">
+            <span class="red-social-icono">gh</span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.behance.net/moralarriga" target="_blank" class="red-social-link">
+            <span class="red-social-icono">be</span>
+            <span>Behance</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-------------                   FOOOOTERRRR                 ------------->
+
+  <footer class="footer-mora">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">© 2025 Mora Larrigaudiere Curutchet</p>
+      <p class="mb-0">Desarrollo Web y Mobile · ISEC</p>
+    </div>
+  </footer>
+
+  <!-------------                  BOOSTRAP MODALES                 ------------->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- JS propio -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
